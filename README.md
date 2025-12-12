@@ -1,0 +1,1 @@
+# yottsu6023.github.io
