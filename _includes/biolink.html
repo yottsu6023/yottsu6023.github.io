@@ -11,6 +11,9 @@
 
   <h1 class="bio-title h4 mb-1">{{ site.title }}</h1>
   <p class="bio-subtitle small text-muted mb-3">{{ site.tagline }}</p>
+  <p class="bio-intro text-center small mb-4">
+    VALORANTを中心にFPSを遊びつつ、VRChatも楽しんでいます。 大学で情報学学んだりもしてます。21歳。
+  </p>
 
   <div class="bio-links w-100" style="max-width:720px">
     {% for item in site.data.links %}
@@ -47,6 +50,11 @@
       margin-bottom: 1rem;
       color: var(--text-muted-color);
     }
+    .bio-link .bio-intro {
+      max-width: 42rem;
+      color: var(--text-muted-color);
+      line-height: 1.8;
+    }
 
     /* Make icons consistent and disable any font/animation flicker */
     .bio-link .btn i {
@@ -64,14 +72,14 @@
       animation: none !important;
       -webkit-animation: none !important;
     }
-      .bio-links .btn {
-        margin-bottom: 0.9rem !important;
-        padding-left: 1rem;
-        padding-right: 1rem;
-      }
-      .bio-links .btn:last-child {
-        margin-bottom: 0 !important;
-      }
+    .bio-links .btn {
+      margin-bottom: 0.9rem !important;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .bio-links .btn:last-child {
+      margin-bottom: 0 !important;
+    }
     .bio-link .btn .fa-2x {
       margin-right: 0.75rem;
     }
