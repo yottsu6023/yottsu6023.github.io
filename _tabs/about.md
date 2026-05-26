@@ -1,8 +1,31 @@
 ---
-# the default layout is 'page'
+title: このサイトについて
 icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+## このサイトについて
+
+このサイトは、よっつーの活動や実績、リンク先をまとめたプロフィールサイトです。
+ゲームのの大会実績・活動履歴、SNS、配信先などをひとまとめにしています。
+
+## サイトの概要
+
+- 個人プロフィールとリンク集
+- 大会実績や活動履歴の整理
+- 必要に応じて、更新や補足を追加
+
+## 技術構成
+
+- Jekyll を使って構築しています。
+- テーマは Chirpy を使っています。
+- GitHub Pages 上でホストしています。
+
+## アクセス解析について
+
+このサイトでは、閲覧状況の把握のために Google Analytics を利用しています。
+収集される情報は、サイトの改善や利用状況の確認に使います。
+
+## ひとこと
+
+もし表示の不備を見つけたら、SNS などから教えてもらえると助かります。
