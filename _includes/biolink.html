@@ -1,0 +1,115 @@
+<section class="bio-link d-flex flex-column align-items-center my-4">
+  <div class="bio-avatar mb-3">
+    <img
+      src="{{ site.avatar | default: '/assets/img/avatar.svg' }}"
+      alt="{{ site.title }}"
+      width="128"
+      height="128"
+      class="rounded-circle"
+    >
+  </div>
+
+  <h1 class="bio-title h4 mb-1">{{ site.title }}</h1>
+  <p class="bio-subtitle small text-muted mb-3">{{ site.tagline }}</p>
+
+  <div class="bio-links w-100" style="max-width:720px">
+    {% for item in site.data.links %}
+      <a
+        href="{{ item.url }}"
+        class="btn btn-outline-primary d-flex align-items-center justify-content-start mb-2 w-100"
+        target="_blank"
+        rel="noopener"
+      >
+        <i class="{{ item.icon }} fa-2x me-3"></i>
+        <div class="flex-grow-1 text-start">
+          <div class="fw-bold">{{ item.title }}</div>
+          {% if item.desc -%}
+            <small class="text-muted">{{ item.desc }}</small>
+          {%- endif %}
+        </div>
+        {% if item.badge -%}
+          <span class="badge bg-secondary ms-2">{{ item.badge }}</span>
+        {%- endif %}
+      </a>
+    {% endfor %}
+  </div>
+
+  <style>
+    .bio-link .btn {
+      padding: 0.85rem 1rem;
+      font-size: 1.02rem;
+      border-radius: 12px;
+    }
+    .bio-link .bio-title {
+      margin-bottom: 0.25rem;
+    }
+    .bio-link .bio-subtitle {
+      margin-bottom: 1rem;
+      color: var(--text-muted-color);
+    }
+
+    /* Make icons consistent and disable any font/animation flicker */
+    .bio-link .btn i {
+      animation: none !important;
+      -webkit-animation: none !important;
+      display: inline-block;
+      line-height: 1;
+    }
+    .bio-link .fa-2x {
+      font-size: 1.6rem !important;
+      width: 2.2rem;
+      text-align: center;
+    }
+    .bio-link .btn i::before {
+      animation: none !important;
+      -webkit-animation: none !important;
+    }
+    .bio-link .btn .fa-2x {
+      margin-right: 0.75rem;
+    }
+
+    /* Disable shimmer overlay on avatar in this section */
+    .bio-avatar .preview-img.shimmer::before {
+      display: none !important;
+    }
+    /* Override theme's .preview-img aspect-ratio which crops the avatar */
+    .bio-avatar .preview-img {
+      aspect-ratio: auto !important;
+      width: 128px !important;
+      height: 128px !important;
+      overflow: visible !important;
+      background: transparent !important;
+      padding: 0;
+      margin: 0;
+    }
+    .bio-avatar .preview-img img {
+      width: 128px !important;
+      height: 128px !important;
+      object-fit: cover;
+      border-radius: 50% !important;
+      display: block;
+    }
+
+    @media (max-width: 576px) {
+      .bio-link .btn .fa-2x {
+        font-size: 1.25rem;
+      }
+    }
+
+    /* Prevent clipping: allow the section to expand and ensure buttons are visible */
+    .bio-link {
+      overflow: visible !important;
+    }
+    .bio-links {
+      max-height: none !important;
+      overflow: visible !important;
+    }
+    .bio-link .btn {
+      min-height: 56px;
+      align-items: center;
+    }
+    .bio-link .btn .flex-grow-1 {
+      overflow: visible;
+    }
+  </style>
+</section>

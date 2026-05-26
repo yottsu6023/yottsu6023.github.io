@@ -1,0 +1,54 @@
+# Biolink-style links for the homepage
+- title: X (FPS)
+  url: https://x.com/yottsu_6023
+  icon: "fa-brands fa-x-twitter"
+  desc: "VALORANTとかのFPS用"
+
+- title: X (VRC)
+  url: https://x.com/yottsub
+  icon: "fa-brands fa-x-twitter"
+  desc: "VRChat用アカウント"
+
+- title: X (サブ)
+  url: https://x.com/yottsub
+  icon: "fa-brands fa-x-twitter"
+  desc: "リア垢・大学"
+
+- title: VRChat
+  url: https://vrchat.com/
+  icon: "fas fa-vr-cardboard"
+  desc: "VRCHATアカウント"
+
+- title: YouTube
+  url: https://www.youtube.com/@yottsu_6023
+  icon: "fab fa-youtube"
+  desc: "動画・配信アーカイブ"
+
+- title: Twitch
+  url: https://www.twitch.tv/yottsu6023
+  icon: "fab fa-twitch"
+  desc: "twitch ライブ配信"
+
+- title: Steam
+  url: https://steamcommunity.com/id/yottsu_6023/
+  icon: "fab fa-steam"
+  desc: "Steamプロフィール"
+
+- title: Discord
+  url: https://discordapp.com/users/216866821620367360
+  icon: "fab fa-discord"
+  desc: "Discord yottsu_6023"
+
+- title: Tracker.gg
+  url: https://tracker.gg/valorant/profile/riot/%E3%83%A8%E3%83%83%E3%83%84%E3%83%BC%236023/
+  icon: "fas fa-crosshairs"
+  desc: "VALORANTの戦績"
+
+- title: GitHub
+  url: https://github.com/yottsu6023
+  icon: "fab fa-github"
+  desc: "Github このサイトもpagesでホストしてる"
+#- title: Email
+#  url: mailto:example@example.com
+#  icon: "fas fa-envelope"
+#  desc: "お問い合わせ"
